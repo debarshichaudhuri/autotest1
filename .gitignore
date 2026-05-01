@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment & Credentials
+service_account.json
+postman/environment.json
+
+# Reports & Logs
+reports/
+*.log
+npm-debug.log*
+
+# Scratch Scripts & Debugging
+debug_api.js
+fix_collection.js
+fix_json.js
+debug.js
+tmp/
+
+# OS Files
+.DS_Store
+Thumbs.db

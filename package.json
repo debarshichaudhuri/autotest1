@@ -1,0 +1,23 @@
+{
+  "name": "groq-api-qa-automation",
+  "version": "1.0.0",
+  "description": "Comprehensive QA automation suite for Groq AI API testing.",
+  "main": "scripts/cleanAndRestructureSheets.js",
+  "scripts": {
+    "test:api": "newman run postman/collection.json -e postman/environment.json",
+    "test:report": "newman run postman/collection.json -e postman/environment.json -r cli,htmlextra --reporter-htmlextra-export reports/test-report.html",
+    "sheets:setup": "node scripts/cleanAndRestructureSheets.js",
+    "test:playwright": "npx playwright test"
+  },
+  "dependencies": {
+    "axios": "^1.15.2",
+    "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "newman": "^6.1.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  },
+  "author": "Senior QA Engineer",
+  "license": "ISC"
+}

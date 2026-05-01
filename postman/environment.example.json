@@ -1,0 +1,30 @@
+{
+  "id": "example-env-id",
+  "name": "Groq API Environment - TEMPLATE",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "https://api.groq.com/openai/v1",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "api_key",
+      "value": "YOUR_GROQ_API_KEY_HERE",
+      "type": "secret",
+      "enabled": true
+    },
+    {
+      "key": "model",
+      "value": "llama-3.3-70b-versatile",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "sample_prompt",
+      "value": "Explain AI in simple terms",
+      "type": "default",
+      "enabled": true
+    }
+  ]
+}
